@@ -17,6 +17,16 @@ public class Artikl {
         cijena = artikl.cijena;
     }
 
+    public String getNaziv() {
+        return naziv;
+    }
 
+    public int getCijena() {
+        return cijena;
+    }
+
+    public String getKod() {
+        return kod;
+    }
 
 }
