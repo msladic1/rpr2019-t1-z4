@@ -5,7 +5,7 @@ public class Supermarket {
     private int brojArtikala = 0;
 
     public void dodajArtikl(Artikl artikl) {
-        if(brojArtikala < 1000) {
+        if(brojArtikala <= 1000) {
             this.artikli[brojArtikala] = new Artikl(artikl);
             brojArtikala = brojArtikala + 1;
         }
