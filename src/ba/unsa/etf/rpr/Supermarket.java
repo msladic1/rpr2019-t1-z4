@@ -20,9 +20,8 @@ public class Supermarket {
             if(this.artikli[i].getKod().equals(s)){
                 Artikl artikl = new Artikl(this.artikli[i]);
                 brojArtikala = brojArtikala - 1;
-                for(int j = i; j < this.brojArtikala; j++) {
-                    this.artikli[j] = this.artikli[j+1];
-                }
+                if (this.brojArtikala - i >= 0)
+                    System.arraycopy(this.artikli, i + 1, this.artikli, i, this.brojArtikala - i);
                 this.artikli[brojArtikala] = null;
                 return artikl;
             }
